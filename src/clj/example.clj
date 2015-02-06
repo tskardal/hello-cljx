@@ -3,4 +3,4 @@
 
 (defn -main [& args]
   (println "hello clj")
-  (s/show))
+  (s/log))

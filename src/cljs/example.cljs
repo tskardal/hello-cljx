@@ -3,4 +3,5 @@
 
 (defn ^:export show []
   (js/console.log "hello cljs")
-  (s/show))
+  (js/alert (s/hello))
+  (s/log))

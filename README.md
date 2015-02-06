@@ -1,36 +1,11 @@
 # hello-cljx
 
-FIXME: description
+A sample project using lein-cljx to share common code between Clojure and ClojureScript
 
-## Installation
+To run the sample you'll need to run these leiningen commands in order:
 
-Download from http://example.com/FIXME.
+* lein cljx once
+* lein cljsbuild once
+* lein ring server
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar hello-cljx-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+The result is a webapp that uses code from the namespace ```example.shared``` in both the server siden handler and the client side ClojureScript code.
